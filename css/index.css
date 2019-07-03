@@ -295,7 +295,13 @@ a:hover{
     width: 225px;
     margin-top: 280px;
 }
-
+.layer-body-left{
+    width: 225px;
+}
+.layer-body-right{ 
+    width: 725px;
+    padding-top: 20px;
+}
 .letf-content-box>li{
     width: 200px;
     margin: auto;
@@ -307,11 +313,45 @@ a:hover{
     text-indent: 15px;
     border-radius: 12px;
 }
-
-
-
-
-
+.go-input{
+    text-indent: 0;
+    padding: 0 8px;
+    color: #fff;
+    float: right;
+    margin-top:5px; 
+    font-size: 12px;
+    margin-right:10px;
+    border-radius: 10px;
+    line-height: 22px; 
+    background: #0083f6;
+}
+.layer-item{
+    padding: 10px 8px 20px; 
+    margin:0 6px 6px 0 ; 
+    float: left;
+    width: 215px;
+    background: #fff;
+}
+.item-img>img{
+    width: 215px;
+}
+.item-img>p{
+    padding:0 8px; 
+    height: 28px;
+    color: #fff;
+    margin-top:-36px; 
+    font-size: 13px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.price{
+    font-size: 18px;
+    color: #ff6600;
+}
+.satisfaction{
+    font-size: 14px;
+    color: #333;
+}
 
 
 
