@@ -9,6 +9,374 @@ body,p,h1,h2,h3,h4,h5,h6,button,input,ul,ol{
 a:hover{
     text-decoration: none;
 }
+
+/*header_top*/
+/* *{margin: 0;padding: 0;} */
+a{text-decoration: none;color:#404040;}
+/* li{list-style:none;} */
+div{white-space:nowrap; }
+i,em{font-style: normal}
+.relative{
+    position: relative;
+}
+
+.header_top{
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height:30px; 
+    background-color: #f8f8f8;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font:12px '微软雅黑';
+    line-height: 30px;
+}
+.header_top ul:first-child{
+    display: flex;
+    margin-left: 120px;
+}
+.header_top ul:first-child li a{
+    padding: 0 5px;
+} 
+.header_top ul:first-child li em{
+    color:#ccc;
+}
+.header_top > ul:nth-child(2){
+    display: flex;
+    /* justify-content: flex-end; */
+    margin-right: 80px;
+}
+.header_top > ul:nth-child(2) li{
+    padding:0 12px;
+}
+.header_top_register{
+    height: 22px;
+    vertical-align: middle;
+}
+.header_top ul li a{
+    color: #404040;
+}
+
+.header_top ul li a:hover{
+    color:#f60;
+}
+.header_top > ul:nth-child(2) li:nth-child(6){
+    padding-right: 22px;
+}
+.header_icon{
+    background: url(//m.tuniucdn.com/fb2/t1/G2/M00/A7/4D/Cii-T1huARyIMMpIAAAXFvgcFtQAAGXYQP-fK8AABcu551.png) 0 0 no-repeat;
+    display: inline-block;
+}
+.icon_weibo{
+    background-position: -40px -50px;
+    width: 18px;
+    height: 13px;
+    margin-top: 10px;
+}
+.icon_phone{
+    width: 11px;
+    height: 26px;
+    background: url(//ssl1.tuniucdn.com/img/201508241400/header/head_icon_qrcode.gif) -10px 0;
+    vertical-align: top;
+}
+.icon_weixin{
+    background-position: -63px -49px;
+    width: 19px;
+    height: 14px;
+    margin-top: 10px;
+}
+.icon_arrow{
+    background-position: -16px -13px;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+    top: 12px;
+    margin-left: 7px;
+    transition:1s;
+    transform:rotateZ(180deg);
+}
+.icon_arrow:hover{
+    background-position: -8px -13px;
+}
+.icon_weibo:hover{
+    background-position: -86px -49px;
+}
+.icon_weixin:hover{
+    background-position: -92px -7px;
+}
+
+
+
+/*header_search*/
+.header_search{
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    font:12px '微软雅黑';
+}
+.header_left_img{
+    margin-left: 120px;
+}
+.header_left_img img{
+    width: 280px;
+}
+.ct_name img{
+    width:61px;height:16px;
+}
+.header_top_icon{
+    background: url(//m.tuniucdn.com/fb2/t1/G2/M00/A7/4D/Cii-T1huARyIMMpIAAAXFvgcFtQAAGXYQP-fK8AABcu551.png) 0 0 no-repeat;
+    display: inline-block;
+}
+
+.header_top a:hover{
+    color: #ff8800;
+}
+
+.ct_name{
+    position: absolute;
+    top:32px;
+    left:290px;
+}
+.ct_name span{
+    color: #000;
+    font-size: 14px;
+    display: inline-block; 
+    margin-bottom:3px; 
+    padding-right:15px;
+}
+.ct_name span em{
+   top:9px; 
+}
+.center_search{
+    margin-top: 28px;
+    width:492px;
+    text-align: left;
+}
+.center_left_search{
+    width: 75px;
+    height: 34px;
+    line-height: 34px;
+    background: #f8f8f8;
+    padding-left: 15px;
+    color: #999;
+    border-left: 3px solid #f80;
+    border-top: 3px solid #f80;
+    border-bottom: 3px solid #f80;
+}
+.center_left_search span{
+    font-size: 12px;
+    line-height: 34px;
+}
+.search_icon{
+    background: url(../image/index/search_icon.jpg) center right no-repeat;
+    position: relative;
+    top: -20px;
+    left: 53px;
+    width: 8px;
+    height: 8px;
+}
+.search_input{
+    position: absolute;
+    left:493px;
+    top:28px;
+}
+.center_search input{
+    box-sizing: border-box;
+    color:rgb(153, 153, 153);
+    width:322px;
+    height: 40px;
+    line-height: 40px;
+    border:0px;
+    border-left: 1px solid #e5e5e5;
+    border-top: 3px solid #f80;
+    border-bottom: 3px solid #f80;
+    padding: 5px;
+    outline: none;
+    font-size: 12px;
+}
+.search_city li{
+    float: left;
+    padding: 2px 5px;
+    background: #f3f3f3;
+    font-size: 12px;
+    border-radius: 12px;
+    margin-left: 10px;
+    color: #999;
+}
+.search_city{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.my_btn{
+    border:none;
+    width: 67px;
+    height: 40px;
+    background-color: #f80;
+    cursor:pointer;
+    color:#fff;
+    font-size: 14px;
+    outline: none;
+    position: absolute;
+    top:28px;left:815px;
+}
+.center_search>span{
+    position: absolute;
+    top:40px;
+    left:882px;
+}
+div.center_search.raletive > span > a > em{
+    top:8px;
+}
+.center_search span a{
+    margin-top: 39px;
+    font-size: 12px;
+    color: #999;
+    position: relative;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.search_img{
+    width:295px;height:77px;
+    background: url(//ssl1.tuniucdn.com/img/2016090719/header/site_contact_bg.png) left bottom no-repeat;
+    margin-top: 6px;
+    background-position: left bottom;
+    margin-left: 150px;
+}
+.search_right{
+    position: absolute;
+    top:43px;
+    right:305px;
+}
+.search_right_img{
+    width:28px;height:28px;
+}
+
+.search_img>div:nth-child(2) a img{
+    position: absolute;
+    top:43px;
+    right:260px;
+}
+.welcome{
+    display: inline-block;
+    width:50px;
+    font-size: 12px;
+    color:#999;
+}
+.mingxing{
+    position: absolute;
+    top:6px;
+    right:84px;
+}
+.search_right a span em{
+    font-style: normal;
+    color:#22c233;
+}
+.search_phone .welcome{
+    position: absolute;
+    top:43px;
+    right: 200px;
+}
+.search_site{
+    background: url(../image/index/site.png);
+    display: inline;
+    width:7px;
+    height:3px;
+    position: absolute;
+    top: 7px;
+    right: -41px;
+}
+}
+.search_end a img{
+    margin-left: 61px;
+    margin-top: 41px !important;
+}
+.search_end a span{
+    width:95px;
+    margin-left: 41px;
+}
+.font—bold{
+    font-size: 12px;
+    color:#f80;
+    font-weight: 600;
+}
+.search_right span img{
+    margin-left: 98px;
+    margin-top: 8px;
+}
+.search_end a span i{
+    background-image: url('../image/1.png');
+    width: 7px;
+    height: 3px;
+    position: absolute;
+    top: 7px;
+    right: -8px;
+}
+
+.menu_panel{
+    box-sizing: border-box;
+    background-color: #2dbb55;
+    height:40px;
+}
+.menu_ul{
+    box-sizing: border-box;
+    display:flex;
+    align-items:center;
+    /* justify-content: space-around; */
+    /* flex-direction: row; */
+    text-align: center;
+    font:12px '微软雅黑';
+    line-height: 38px;
+    margin-left:120px;
+    margin-right:90px;
+}
+.menu_ul li a{
+    color: #fff;
+    font-size: 16px;
+    padding:0 25px;
+}
+.menu_ul li:hover{
+    background-color:#5ae668;
+    border-right:0;
+}
+.menu_ul li:not(:last-child)>a{
+    border-right:1px solid #bfbfc1;
+}
+.menu_ul li:first-child{
+    font-weight: 600;
+}
+.cui_ico_triangle{
+    background:url(../image/index/Cii-TFhs53GIKupNAAAcTcgqQcwAAGV2AOTTr0AABxl348.png) no-repeat;
+    width: 5px;
+    height: 3px;
+    overflow: hidden;
+    background-position: -32px -456px;
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    margin-left: 3px;
+}
+.icon_nav_img{
+    position: absolute;
+    top: -12px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    line-height: 18px;
+    text-indent: -20000em;
+    z-index: 11;
+    height: 18px;
+}
+
+
+
+
+
+
+
 /* 清除浮动 */
 .clearfix:after{
 	content: '';
