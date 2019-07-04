@@ -108,211 +108,6 @@ i,em{font-style: normal}
 
 
 /*header_search*/
-.header_search{
-    height: 100px;
-    box-sizing: border-box;
-    display: flex;
-    text-align: center;
-    font:12px '微软雅黑';
-}
-.header_left_img{
-    margin-left: 120px;
-}
-.header_left_img img{
-    width: 280px;
-}
-.ct_name img{
-    width:61px;height:16px;
-}
-.header_top_icon{
-    background: url(//m.tuniucdn.com/fb2/t1/G2/M00/A7/4D/Cii-T1huARyIMMpIAAAXFvgcFtQAAGXYQP-fK8AABcu551.png) 0 0 no-repeat;
-    display: inline-block;
-}
-
-.header_top a:hover{
-    color: #ff8800;
-}
-
-.ct_name{
-    position: absolute;
-    top:32px;
-    left:290px;
-}
-.ct_name span{
-    color: #000;
-    font-size: 14px;
-    display: inline-block; 
-    margin-bottom:3px; 
-    padding-right:15px;
-}
-.ct_name span em{
-   top:9px; 
-}
-.center_search{
-    margin-top: 28px;
-    width:492px;
-    text-align: left;
-}
-.center_left_search{
-    width: 75px;
-    height: 34px;
-    line-height: 34px;
-    background: #f8f8f8;
-    padding-left: 15px;
-    color: #999;
-    border-left: 3px solid #f80;
-    border-top: 3px solid #f80;
-    border-bottom: 3px solid #f80;
-}
-.center_left_search span{
-    font-size: 12px;
-    line-height: 34px;
-}
-.search_icon{
-    background: url(../image/index/search_icon.jpg) center right no-repeat;
-    position: relative;
-    top: -20px;
-    left: 53px;
-    width: 8px;
-    height: 8px;
-}
-.search_input{
-    position: absolute;
-    left:493px;
-    top:28px;
-}
-.center_search input{
-    box-sizing: border-box;
-    color:rgb(153, 153, 153);
-    width:322px;
-    height: 40px;
-    line-height: 40px;
-    border:0px;
-    border-left: 1px solid #e5e5e5;
-    border-top: 3px solid #f80;
-    border-bottom: 3px solid #f80;
-    padding: 5px;
-    outline: none;
-    font-size: 12px;
-}
-.search_city li{
-    float: left;
-    padding: 2px 5px;
-    background: #f3f3f3;
-    font-size: 12px;
-    border-radius: 12px;
-    margin-left: 10px;
-    color: #999;
-}
-.search_city{
-    position: absolute;
-    top:10px;
-    right:10px;
-}
-.my_btn{
-    border:none;
-    width: 67px;
-    height: 40px;
-    background-color: #f80;
-    cursor:pointer;
-    color:#fff;
-    font-size: 14px;
-    outline: none;
-    position: absolute;
-    top:28px;left:815px;
-}
-.center_search>span{
-    position: absolute;
-    top:40px;
-    left:882px;
-}
-div.center_search.raletive > span > a > em{
-    top:8px;
-}
-.center_search span a{
-    margin-top: 39px;
-    font-size: 12px;
-    color: #999;
-    position: relative;
-    margin-left: 10px;
-    padding-right: 10px;
-}
-.search_img{
-    width:295px;height:77px;
-    background: url(//ssl1.tuniucdn.com/img/2016090719/header/site_contact_bg.png) left bottom no-repeat;
-    margin-top: 6px;
-    background-position: left bottom;
-    margin-left: 150px;
-}
-.search_right{
-    position: absolute;
-    top:43px;
-    right:305px;
-}
-.search_right_img{
-    width:28px;height:28px;
-}
-
-.search_img>div:nth-child(2) a img{
-    position: absolute;
-    top:43px;
-    right:260px;
-}
-.welcome{
-    display: inline-block;
-    width:50px;
-    font-size: 12px;
-    color:#999;
-}
-.mingxing{
-    position: absolute;
-    top:6px;
-    right:84px;
-}
-.search_right a span em{
-    font-style: normal;
-    color:#22c233;
-}
-.search_phone .welcome{
-    position: absolute;
-    top:43px;
-    right: 200px;
-}
-.search_site{
-    background: url(../image/index/site.png);
-    display: inline;
-    width:7px;
-    height:3px;
-    position: absolute;
-    top: 7px;
-    right: -41px;
-}
-}
-.search_end a img{
-    margin-left: 61px;
-    margin-top: 41px !important;
-}
-.search_end a span{
-    width:95px;
-    margin-left: 41px;
-}
-.font—bold{
-    font-size: 12px;
-    color:#f80;
-    font-weight: 600;
-}
-.search_right span img{
-    margin-left: 98px;
-    margin-top: 8px;
-}
-.search_end a span i{
-    background-image: url('../image/1.png');
-    width: 7px;
-    height: 3px;
-    position: absolute;
-    top: 7px;
-    right: -8px;
-}
 
 .menu_panel{
     box-sizing: border-box;
@@ -328,7 +123,7 @@ div.center_search.raletive > span > a > em{
     /* justify-content: space-around; */
     /* flex-direction: row; */
     text-align: center;
-    font:12px '微软雅黑';
+    font:12px;
     line-height: 38px;
     margin-left:120px;
     margin-right:90px;
@@ -713,14 +508,14 @@ div.center_search.raletive > span > a > em{
     background: #0083f6;
 }
 .layer-item{
-    padding: 10px 6px 15px; 
-    margin:0 6px 6px 0 ; 
+    padding: 10px 5px 15px; 
+    margin:0 7px 7px 0 ; 
     float: left;
-    width: 215px;
+    width: 224px;
     background: #fff;
 }
 .item-img>img{
-    width: 215px;
+    width: 224px;
 }
 .item-img>p{
     padding:0 8px; 
