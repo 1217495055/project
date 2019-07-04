@@ -14,7 +14,6 @@ a:hover{
 /* *{margin: 0;padding: 0;} */
 a{text-decoration: none;color:#404040;}
 /* li{list-style:none;} */
-div{white-space:nowrap; }
 i,em{font-style: normal}
 .relative{
     position: relative;
@@ -319,7 +318,9 @@ div.center_search.raletive > span > a > em{
     box-sizing: border-box;
     background-color: #2dbb55;
     height:40px;
+    white-space: nowrap;
 }
+
 .menu_ul{
     box-sizing: border-box;
     display:flex;
@@ -630,10 +631,19 @@ div.center_search.raletive > span > a > em{
 }
 
 /* 合并项目时需要删除margin */
+.layer-content{
+    width: 950px;
+}
+.layer-content-box{
+    margin-top: 30px;
+}
+.mt-500{
+    margin-top: 500px
+}
 .layer-title{
     border-bottom: 3px solid #e15b39;
-    margin-top: 500px;
     line-height: 32px;
+    margin-top: 30px;
 }
 .layer-tabs{
     height: 32px;
@@ -642,6 +652,9 @@ div.center_search.raletive > span > a > em{
     float: left;
     width: 220px; 
     margin-left: 24px; 
+}
+.border-gray{
+    border-bottom: 3px solid #eceef4;
 }
 
 .layer-tabs>li{
@@ -656,19 +669,25 @@ div.center_search.raletive > span > a > em{
 .layer-body{
     padding-bottom: 22px;
     width:950px;
+}
+.bg-layer{
     background:url(../image/index/Cii-s10ZYoOIRpm2AAJiMfV6yE0AAXQjAP6x0UAAmJJ58.jpeg) 0 0 no-repeat;
-    background-size:100%; 
+    background-size:100%;
 }
 .letf-content-box{
     width: 225px;
     margin-top: 280px;
 }
 .layer-body-left{
-    width: 225px;
+    width: 215px;
+    padding-left: 10px;
 }
 .layer-body-right{ 
     width: 725px;
     padding-top: 20px;
+}
+.p-0{
+    padding-top:0;
 }
 .letf-content-box>li{
     width: 200px;
@@ -694,7 +713,7 @@ div.center_search.raletive > span > a > em{
     background: #0083f6;
 }
 .layer-item{
-    padding: 10px 8px 20px; 
+    padding: 10px 6px 15px; 
     margin:0 6px 6px 0 ; 
     float: left;
     width: 215px;
@@ -705,10 +724,10 @@ div.center_search.raletive > span > a > em{
 }
 .item-img>p{
     padding:0 8px; 
-    height: 28px;
+    height: 26px;
     color: #fff;
     margin-top:-36px; 
-    font-size: 13px;
+    font-size: 12px;
     overflow: hidden;
     margin-bottom: 15px;
 }
@@ -717,10 +736,30 @@ div.center_search.raletive > span > a > em{
     color: #ff6600;
 }
 .satisfaction{
-    font-size: 14px;
+    line-height: 25px;
+    font-size: 12px;
     color: #333;
+    margin-right:6px;
+    color:#bfbfc1;  
 }
-
-
+.b-l-title{
+    margin-top: 17px;
+    font-weight:bold;
+    font-size:14px;  
+}
+.scenic-tabs{
+    padding: 8px 0 4px 0;
+    border-bottom: 1px solid #bfbfc1;
+}
+.scenic-tabs>li{
+    width: 107px;
+    font-size: 13px;
+    line-height: 25px;
+    float: left;
+}
+.scenic-tabs+img{
+    margin-top: 10px;
+    width: 225px;
+}
 
 
