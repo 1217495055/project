@@ -1,0 +1,93 @@
+<template>
+    <div class='photoinfo-container'>
+        <h3>{{photoinfo.title}}</h3>
+        <p class="subtitle">
+            <span>发表时间：{{photoinfo.add_time|dateFormat}}</span>
+            <span>点击：{{photoinfo.click}}次</span>
+        </p>
+
+        <hr>
+
+        <!-- 缩略图区域 -->
+         <div class='thumbs'>
+             <img class="preview-img" v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.open(index, list)" :key='item.src'>
+         </div>
+
+        <!-- 图片内容区域 -->
+        <div class="content" v-html='photoinfo.content'></div>
+
+        <!--放置现成的 评论子组件 -->
+        <cmt-box :id='id'></cmt-box>
+    </div>
+</template>
+
+<script>
+// 导入评论子组件
+import comment from '../subcomponents/comment'
+export default {
+    data(){
+        return{
+            id:this.$route.params.id , //从路由中获取到的图片id
+            photoinfo:[],  //图片详情
+            list:[],  //缩略图的数组
+        }
+    },
+    created(){
+        this.getPhotoInfo();
+        this.getThumbs();
+    },
+    methods:{
+        getThumbs(){
+            // 获取缩略图
+            this.axios.get('api/getthumimages'+this.id).then(result=>{
+                if(result.data.status==0){
+                    // 循环每个图片数据，补全图片的宽和高
+                    result.data.message.forEach(item=>{
+                        item.w=600;
+                        item.h = 400;
+                    })
+                    // 把完整的数据保存进list
+                    this.list=result.data.message;
+                }
+            })
+        },
+        getPhotoInfo(){
+            // 获取图片详情
+            this.axios.get('api/getimageInfo/'+this.id).then(result=>{
+                if(result.data.status==0){
+                    this.phototinfo = result.data.message[0];
+                }
+            })
+        }
+    },
+    components:{
+        // 注册评论子组件
+        'cmt-box':comment,
+    }
+}
+</script>
+
+<style scoped>
+.photoinfo-container{
+    padding:3px;
+} 
+.photoinfo-container h3{
+    color:#26a2ff;
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+.photoinfo-container .subtitle{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.photoinfo-container .content{
+    font-size: 13px;
+    line-height: 30px;
+}
+.photoinfo-container .thumbs{
+    margin: 10px;
+    box-shadow: 0 0 10px #999;
+}
+</style>
