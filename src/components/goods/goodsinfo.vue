@@ -95,6 +95,8 @@ export default {
             // {id:商品id,count:购买的数量,price:商品的单价,selected：false}
             // 拼接处一个，要保存进store中car数组里，商品信息对象中
             var goodsinfo = {id:this.id,count:this.selectedCount,price:this.goodsinfo.sell_price,selected:true}
+            // 调用store中的mutations来将商品加入购物车
+            this.$store.commit('addToCar',goodsinfo)
         },
         godesc(id){
             // 点击使用编程式导航跳转到图文介绍页面

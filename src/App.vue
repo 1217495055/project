@@ -2,7 +2,10 @@
   <div class="app-container">
 
     <!-- 顶部 Header 区域 -->
-    <mt-header fixed title="遇见更美的你"></mt-header>
+    <mt-header fixed title="遇见更美的你">
+		<span slot='left' @click='goback' v-show='flag'>
+		<mt-button icon='back'>返回</mt-button></span>
+	</mt-header>
 
 
     <!-- 中间的 路由 router-view 区域 -->
@@ -23,7 +26,7 @@
 			</router-link>
 			<router-link class="mui-tab-item-llb" to="/shopcar">
 				<span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-					<span class="mui-badge" id='badge'>0</span>
+					<span class="mui-badge" id='badge'>{{$store.getters.getAllCount}}</span>
 				</span>
 				<span class="mui-tab-label">购物车</span>
 			</router-link>
@@ -37,6 +40,31 @@
 </template>
 
 <script>
+export default {
+	data(){
+		return{
+			flag:false,
+		}
+	},
+	watch:{
+		'$route.path':function(newVal){
+			if(newVal=='/home'){
+				this.flag = false;
+			}else{
+				this.flag=true;
+			}
+		}
+	},
+	created(){
+		this.flag == this.$route.path==='/home'?false:true;
+	},
+	methods:{
+		goback(){
+			// 点击后退
+			this.$router.go(-1);
+		},
+	}
+}
 </script>
 
 
