@@ -11,6 +11,8 @@ import photolist from './components/photos/photolist'
 import photoinfo from './components/photos/photoinfo'
 import goodslist from './components/goods/goodslist'
 import goodsinfo from './components/goods/goodsinfo'
+import goodsdesc from './components/goods/goodsdesc'
+import goodscomment from './components/goods/goodscomment'
 // 1 在 router.js 引入组件
 import Index from "@/components/exam/index"
 // import VueRouter from 'vue-router';
@@ -29,7 +31,9 @@ export default new Router({
     {path:'/home/photolist',component:photolist},
     {path:'/home/photoinfo/:id',component:photoinfo,props:true},
     {path:'/home/goodslist',component:goodslist},
-    {path:'/home/goodsinfo/:id',component:goodsinfo,props:true,name='goodsinfo'},
+    {path:'/home/goodsinfo/:id',component:goodsinfo,props:true,name:'goodsinfo'},
+    {path:'/home/goodsdesc/:id',component:goodsdesc,props:true,name:'goodsdesc'},
+    {path:'/home/goodscomment/:id',component:goodscomment,props:true,name:'goodscomment'},
   ],
   linkActiveClass:'mui-active'
 })

@@ -49,7 +49,7 @@ export default {
         goDetail(id){
             // 使用js的形式进行路由导航
             this.$router.push('home/goodsinfo/'+id);
-            this.$router.push({path:'home/goodsinfo/'+id})
+            // this.$router.push({path:'home/goodsinfo/'+id})
         },
         getMore(){
             this.pageindex++;
